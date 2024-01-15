@@ -12,32 +12,20 @@
 
 import { RequestFile } from './models';
 
-export class SmartSearch200Response {
-    'data': Array<string>;
-    'success': boolean;
-    'error': object;
+export class Report200ResponseAllOfDataInner {
+    'reportDescription'?: string | null;
 
     static discriminator: string | undefined = undefined;
 
     static attributeTypeMap: Array<{name: string, baseName: string, type: string}> = [
         {
-            "name": "data",
-            "baseName": "data",
-            "type": "Array<string>"
-        },
-        {
-            "name": "success",
-            "baseName": "success",
-            "type": "boolean"
-        },
-        {
-            "name": "error",
-            "baseName": "error",
-            "type": "object"
+            "name": "reportDescription",
+            "baseName": "reportDescription",
+            "type": "string"
         }    ];
 
     static getAttributeTypeMap() {
-        return SmartSearch200Response.attributeTypeMap;
+        return Report200ResponseAllOfDataInner.attributeTypeMap;
     }
 }
 

@@ -11,9 +11,10 @@
  */
 
 import { RequestFile } from './models';
+import { StatusFilters200ResponseAllOfDataInner } from './statusFilters200ResponseAllOfDataInner';
 
-export class SmartSearch200Response {
-    'data': Array<string>;
+export class StatusFilters200Response {
+    'data': Array<StatusFilters200ResponseAllOfDataInner>;
     'success': boolean;
     'error': object;
 
@@ -23,7 +24,7 @@ export class SmartSearch200Response {
         {
             "name": "data",
             "baseName": "data",
-            "type": "Array<string>"
+            "type": "Array<StatusFilters200ResponseAllOfDataInner>"
         },
         {
             "name": "success",
@@ -37,7 +38,7 @@ export class SmartSearch200Response {
         }    ];
 
     static getAttributeTypeMap() {
-        return SmartSearch200Response.attributeTypeMap;
+        return StatusFilters200Response.attributeTypeMap;
     }
 }
 

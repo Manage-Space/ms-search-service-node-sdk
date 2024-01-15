@@ -12,32 +12,35 @@
 
 import { RequestFile } from './models';
 
-export class SmartSearch200Response {
-    'data': Array<string>;
-    'success': boolean;
-    'error': object;
+export class MoveOut200ResponseAllOfDataInner {
+    'accountName'?: string | null;
+    'unitName'?: string | null;
+    /**
+    * A date in YYYY-MM-DD format
+    */
+    'moveOutDate'?: string | null;
 
     static discriminator: string | undefined = undefined;
 
     static attributeTypeMap: Array<{name: string, baseName: string, type: string}> = [
         {
-            "name": "data",
-            "baseName": "data",
-            "type": "Array<string>"
+            "name": "accountName",
+            "baseName": "accountName",
+            "type": "string"
         },
         {
-            "name": "success",
-            "baseName": "success",
-            "type": "boolean"
+            "name": "unitName",
+            "baseName": "unitName",
+            "type": "string"
         },
         {
-            "name": "error",
-            "baseName": "error",
-            "type": "object"
+            "name": "moveOutDate",
+            "baseName": "moveOutDate",
+            "type": "string"
         }    ];
 
     static getAttributeTypeMap() {
-        return SmartSearch200Response.attributeTypeMap;
+        return MoveOut200ResponseAllOfDataInner.attributeTypeMap;
     }
 }
 

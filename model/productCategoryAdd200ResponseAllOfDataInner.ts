@@ -12,32 +12,29 @@
 
 import { RequestFile } from './models';
 
-export class SmartSearch200Response {
-    'data': Array<string>;
-    'success': boolean;
-    'error': object;
+export class ProductCategoryAdd200ResponseAllOfDataInner {
+    'categoryName'?: string | null;
+    /**
+    * Generated from the category name if not provided
+    */
+    'categoryDescription'?: string | null;
 
     static discriminator: string | undefined = undefined;
 
     static attributeTypeMap: Array<{name: string, baseName: string, type: string}> = [
         {
-            "name": "data",
-            "baseName": "data",
-            "type": "Array<string>"
+            "name": "categoryName",
+            "baseName": "categoryName",
+            "type": "string"
         },
         {
-            "name": "success",
-            "baseName": "success",
-            "type": "boolean"
-        },
-        {
-            "name": "error",
-            "baseName": "error",
-            "type": "object"
+            "name": "categoryDescription",
+            "baseName": "categoryDescription",
+            "type": "string"
         }    ];
 
     static getAttributeTypeMap() {
-        return SmartSearch200Response.attributeTypeMap;
+        return ProductCategoryAdd200ResponseAllOfDataInner.attributeTypeMap;
     }
 }
 

@@ -12,8 +12,8 @@
 
 import { RequestFile } from './models';
 
-export class SmartSearch200Response {
-    'data': Array<string>;
+export class CommonResponse {
+    'data': Array<object>;
     'success': boolean;
     'error': object;
 
@@ -23,7 +23,7 @@ export class SmartSearch200Response {
         {
             "name": "data",
             "baseName": "data",
-            "type": "Array<string>"
+            "type": "Array<object>"
         },
         {
             "name": "success",
@@ -37,7 +37,7 @@ export class SmartSearch200Response {
         }    ];
 
     static getAttributeTypeMap() {
-        return SmartSearch200Response.attributeTypeMap;
+        return CommonResponse.attributeTypeMap;
     }
 }
 
