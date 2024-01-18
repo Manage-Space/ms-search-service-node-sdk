@@ -116,7 +116,7 @@ export class DefaultApi {
     }
 
     /**
-     * 
+     * Change the current site
      * @summary Change Site
      * @param query The search query string
      */
@@ -191,7 +191,7 @@ export class DefaultApi {
         });
     }
     /**
-     * 
+     * Add new contact (includes individual or company)
      * @summary Add Contact
      * @param query The search query string
      */
@@ -266,8 +266,8 @@ export class DefaultApi {
         });
     }
     /**
-     * 
-     * @summary Contact List
+     * List contact(s)
+     * @summary List Contact(s)
      * @param query The search query string
      */
     public async contactList (query: string, options: {headers: {[name: string]: string}} = {headers: {}}) : Promise<{ response: http.IncomingMessage; body: CommonResponse;  }> {
@@ -341,8 +341,8 @@ export class DefaultApi {
         });
     }
     /**
-     * 
-     * @summary Event List
+     * List event(s)
+     * @summary List Event(s)
      * @param query The search query string
      */
     public async eventList (query: string, options: {headers: {[name: string]: string}} = {headers: {}}) : Promise<{ response: http.IncomingMessage; body: CommonResponse;  }> {
@@ -416,7 +416,7 @@ export class DefaultApi {
         });
     }
     /**
-     * 
+     * Add new type of fee
      * @summary Add Fee
      * @param query The search query string
      */
@@ -491,8 +491,8 @@ export class DefaultApi {
         });
     }
     /**
-     * 
-     * @summary Fee List
+     * List fee type(s)
+     * @summary List Fee(s)
      * @param query The search query string
      */
     public async feeList (query: string, options: {headers: {[name: string]: string}} = {headers: {}}) : Promise<{ response: http.IncomingMessage; body: CommonResponse;  }> {
@@ -566,8 +566,8 @@ export class DefaultApi {
         });
     }
     /**
-     * 
-     * @summary Invoice List
+     * List invoice(s)
+     * @summary List Invoice(s)
      * @param query The search query string
      */
     public async invoiceList (query: string, options: {headers: {[name: string]: string}} = {headers: {}}) : Promise<{ response: http.IncomingMessage; body: CommonResponse;  }> {
@@ -641,8 +641,8 @@ export class DefaultApi {
         });
     }
     /**
-     * 
-     * @summary Ledger List
+     * List ledger(s)
+     * @summary List Ledger(s)
      * @param query The search query string
      */
     public async ledgerList (query: string, options: {headers: {[name: string]: string}} = {headers: {}}) : Promise<{ response: http.IncomingMessage; body: CommonResponse;  }> {
@@ -716,7 +716,7 @@ export class DefaultApi {
         });
     }
     /**
-     * 
+     * Log out of the system
      * @summary Log Out
      * @param query The search query string
      */
@@ -791,7 +791,7 @@ export class DefaultApi {
         });
     }
     /**
-     * 
+     * Move a customer into a unit
      * @summary Move In
      * @param query The search query string
      */
@@ -866,7 +866,7 @@ export class DefaultApi {
         });
     }
     /**
-     * 
+     * Move a customer out of a unit
      * @summary Move Out
      * @param query The search query string
      */
@@ -941,7 +941,7 @@ export class DefaultApi {
         });
     }
     /**
-     * 
+     * View the notifications screen
      * @summary Notifications
      * @param query The search query string
      */
@@ -1016,7 +1016,7 @@ export class DefaultApi {
         });
     }
     /**
-     * 
+     * Add new pricing group
      * @summary Add Pricing Group
      * @param query The search query string
      */
@@ -1091,8 +1091,8 @@ export class DefaultApi {
         });
     }
     /**
-     * 
-     * @summary Pricing Group List
+     * List pricing group(s)
+     * @summary List Pricing Group(s)
      * @param query The search query string
      */
     public async pricingGroupList (query: string, options: {headers: {[name: string]: string}} = {headers: {}}) : Promise<{ response: http.IncomingMessage; body: CommonResponse;  }> {
@@ -1166,7 +1166,7 @@ export class DefaultApi {
         });
     }
     /**
-     * 
+     * Add new product/merchandise item
      * @summary Add Product
      * @param query The search query string
      */
@@ -1241,7 +1241,7 @@ export class DefaultApi {
         });
     }
     /**
-     * 
+     * Add new product/merchandise item category
      * @summary Add Product Category
      * @param query The search query string
      */
@@ -1316,8 +1316,8 @@ export class DefaultApi {
         });
     }
     /**
-     * 
-     * @summary Product Category List
+     * List product/merchandise item category/ies
+     * @summary List Product Category(s)
      * @param query The search query string
      */
     public async productCategoryList (query: string, options: {headers: {[name: string]: string}} = {headers: {}}) : Promise<{ response: http.IncomingMessage; body: CommonResponse;  }> {
@@ -1391,8 +1391,8 @@ export class DefaultApi {
         });
     }
     /**
-     * 
-     * @summary Product List
+     * List product(s)/merchandise item(s)
+     * @summary List Product(s)
      * @param query The search query string
      */
     public async productList (query: string, options: {headers: {[name: string]: string}} = {headers: {}}) : Promise<{ response: http.IncomingMessage; body: CommonResponse;  }> {
@@ -1466,7 +1466,7 @@ export class DefaultApi {
         });
     }
     /**
-     * 
+     * Show platform release notes
      * @summary Release Notes
      * @param query The search query string
      */
@@ -1541,8 +1541,8 @@ export class DefaultApi {
         });
     }
     /**
-     * 
-     * @summary Rental List
+     * List rental(s)
+     * @summary List Rental(s)
      * @param query The search query string
      */
     public async rentalList (query: string, options: {headers: {[name: string]: string}} = {headers: {}}) : Promise<{ response: http.IncomingMessage; body: CommonResponse;  }> {
@@ -1616,8 +1616,8 @@ export class DefaultApi {
         });
     }
     /**
-     * 
-     * @summary Report
+     * Generate/run a report, including performing any database query to calculate totals or other data
+     * @summary Run a Report
      * @param query The search query string
      */
     public async report (query: string, options: {headers: {[name: string]: string}} = {headers: {}}) : Promise<{ response: http.IncomingMessage; body: Report200Response;  }> {
@@ -1691,7 +1691,7 @@ export class DefaultApi {
         });
     }
     /**
-     * 
+     * Make a new reservation for a unit
      * @summary Add Reservation
      * @param query The search query string
      */
@@ -1766,8 +1766,8 @@ export class DefaultApi {
         });
     }
     /**
-     * 
-     * @summary Reservation List
+     * List reservation(s)
+     * @summary List Reservation(s)
      * @param query The search query string
      */
     public async reservationList (query: string, options: {headers: {[name: string]: string}} = {headers: {}}) : Promise<{ response: http.IncomingMessage; body: CommonResponse;  }> {
@@ -1841,7 +1841,7 @@ export class DefaultApi {
         });
     }
     /**
-     * 
+     * Reset data
      * @summary Reset Data
      * @param query The search query string
      */
@@ -1916,7 +1916,7 @@ export class DefaultApi {
         });
     }
     /**
-     * 
+     * Update appearance settings incl. light/dark mode, unit status color, and showing grid/labels on the 3D map
      * @summary Appearance Settings
      * @param query The search query string
      */
@@ -1991,7 +1991,7 @@ export class DefaultApi {
         });
     }
     /**
-     * 
+     * Update language settings
      * @summary Language Settings
      * @param query The search query string
      */
@@ -2066,7 +2066,7 @@ export class DefaultApi {
         });
     }
     /**
-     * 
+     * Update organization settings incl. name, description, currency, days before late/lien/overlocked/move-out, prorate move-out threshold date, notification delay, max reminder attempts, billing cycle type or timezone
      * @summary Organization Settings
      * @param query The search query string
      */
@@ -2141,7 +2141,7 @@ export class DefaultApi {
         });
     }
     /**
-     * 
+     * Show specific floor on 3D map
      * @summary Show Floor
      * @param query The search query string
      */
@@ -2291,7 +2291,7 @@ export class DefaultApi {
         });
     }
     /**
-     * 
+     * Set active unit status filters
      * @summary Status Filters
      * @param query The search query string
      */
@@ -2366,7 +2366,7 @@ export class DefaultApi {
         });
     }
     /**
-     * 
+     * Add new subscription product item
      * @summary Add Subscription Product
      * @param query The search query string
      */
@@ -2441,7 +2441,7 @@ export class DefaultApi {
         });
     }
     /**
-     * 
+     * Add new subscription product item category
      * @summary Add Subscription Product Category
      * @param query The search query string
      */
@@ -2516,7 +2516,7 @@ export class DefaultApi {
         });
     }
     /**
-     * 
+     * List subscription product item category/ies
      * @summary Subscription Product Category List
      * @param query The search query string
      */
@@ -2591,8 +2591,8 @@ export class DefaultApi {
         });
     }
     /**
-     * 
-     * @summary List Subscription Products
+     * List subscription product item(s), incl. insurance but excl. rentals
+     * @summary List Subscription Product(s)
      * @param query The search query string
      */
     public async subscriptionProductList (query: string, options: {headers: {[name: string]: string}} = {headers: {}}) : Promise<{ response: http.IncomingMessage; body: CommonResponse;  }> {
@@ -2666,7 +2666,7 @@ export class DefaultApi {
         });
     }
     /**
-     * 
+     * Add new tax rate
      * @summary Add Tax Rate
      * @param query The search query string
      */
@@ -2741,8 +2741,8 @@ export class DefaultApi {
         });
     }
     /**
-     * 
-     * @summary Tax Rate List
+     * List tax rate(s)
+     * @summary List Tax Rate(s)
      * @param query The search query string
      */
     public async taxRateList (query: string, options: {headers: {[name: string]: string}} = {headers: {}}) : Promise<{ response: http.IncomingMessage; body: CommonResponse;  }> {
@@ -2816,7 +2816,7 @@ export class DefaultApi {
         });
     }
     /**
-     * 
+     * Move camera on 3D map to display a top-down view of the facility
      * @summary Top Down View
      * @param query The search query string
      */
@@ -2891,8 +2891,8 @@ export class DefaultApi {
         });
     }
     /**
-     * 
-     * @summary Transaction List
+     * List transaction(s)
+     * @summary List Transaction(s)
      * @param query The search query string
      */
     public async transactionList (query: string, options: {headers: {[name: string]: string}} = {headers: {}}) : Promise<{ response: http.IncomingMessage; body: CommonResponse;  }> {
@@ -2966,8 +2966,8 @@ export class DefaultApi {
         });
     }
     /**
-     * 
-     * @summary Unit List
+     * List unit(s)
+     * @summary List Unit(s)
      * @param query The search query string
      */
     public async unitList (query: string, options: {headers: {[name: string]: string}} = {headers: {}}) : Promise<{ response: http.IncomingMessage; body: CommonResponse;  }> {
@@ -3041,8 +3041,8 @@ export class DefaultApi {
         });
     }
     /**
-     * 
-     * @summary User List
+     * List user(s)
+     * @summary List User(s)
      * @param query The search query string
      */
     public async userList (query: string, options: {headers: {[name: string]: string}} = {headers: {}}) : Promise<{ response: http.IncomingMessage; body: CommonResponse;  }> {
@@ -3116,8 +3116,8 @@ export class DefaultApi {
         });
     }
     /**
-     * 
-     * @summary Widgets Edit
+     * Edit widget(s)
+     * @summary Edit Widget(s)
      * @param query The search query string
      */
     public async widgetsEdit (query: string, options: {headers: {[name: string]: string}} = {headers: {}}) : Promise<{ response: http.IncomingMessage; body: CommonResponse;  }> {
@@ -3191,7 +3191,7 @@ export class DefaultApi {
         });
     }
     /**
-     * 
+     * Add new workflow definition
      * @summary Add Workflow Definition
      * @param query The search query string
      */
@@ -3266,8 +3266,8 @@ export class DefaultApi {
         });
     }
     /**
-     * 
-     * @summary List Workflow Definitions
+     * List workflow definition(s)
+     * @summary List Workflow Definition(s)
      * @param query The search query string
      */
     public async workflowDefinitionList (query: string, options: {headers: {[name: string]: string}} = {headers: {}}) : Promise<{ response: http.IncomingMessage; body: CommonResponse;  }> {
@@ -3341,7 +3341,7 @@ export class DefaultApi {
         });
     }
     /**
-     * 
+     * Add new workflow form
      * @summary Add Workflow Form
      * @param query The search query string
      */
@@ -3416,7 +3416,7 @@ export class DefaultApi {
         });
     }
     /**
-     * 
+     * List workflow form(s)
      * @summary Workflow Form List
      * @param query The search query string
      */
