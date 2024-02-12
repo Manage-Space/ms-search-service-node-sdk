@@ -118,9 +118,9 @@ export class DefaultApi {
     /**
      * Change the current site
      * @summary Change Site
-     * @param query The search query string
+     * @param q The search query string
      */
-    public async changeSite (query: string, options: {headers: {[name: string]: string}} = {headers: {}}) : Promise<{ response: http.IncomingMessage; body: ChangeSite200Response;  }> {
+    public async changeSite (q: string, options: {headers: {[name: string]: string}} = {headers: {}}) : Promise<{ response: http.IncomingMessage; body: ChangeSite200Response;  }> {
         const localVarPath = this.basePath + '/change-site';
         let localVarQueryParameters: any = {};
         let localVarHeaderParams: any = (<any>Object).assign({}, this._defaultHeaders);
@@ -133,13 +133,13 @@ export class DefaultApi {
         }
         let localVarFormParams: any = {};
 
-        // verify required parameter 'query' is not null or undefined
-        if (query === null || query === undefined) {
-            throw new Error('Required parameter query was null or undefined when calling changeSite.');
+        // verify required parameter 'q' is not null or undefined
+        if (q === null || q === undefined) {
+            throw new Error('Required parameter q was null or undefined when calling changeSite.');
         }
 
-        if (query !== undefined) {
-            localVarQueryParameters['query'] = ObjectSerializer.serialize(query, "string");
+        if (q !== undefined) {
+            localVarQueryParameters['q'] = ObjectSerializer.serialize(q, "string");
         }
 
         (<any>Object).assign(localVarHeaderParams, options.headers);
@@ -193,9 +193,9 @@ export class DefaultApi {
     /**
      * Add new contact (includes individual or company)
      * @summary Add Contact
-     * @param query The search query string
+     * @param q The search query string
      */
-    public async contactAdd (query: string, options: {headers: {[name: string]: string}} = {headers: {}}) : Promise<{ response: http.IncomingMessage; body: ContactAdd200Response;  }> {
+    public async contactAdd (q: string, options: {headers: {[name: string]: string}} = {headers: {}}) : Promise<{ response: http.IncomingMessage; body: ContactAdd200Response;  }> {
         const localVarPath = this.basePath + '/contact-add';
         let localVarQueryParameters: any = {};
         let localVarHeaderParams: any = (<any>Object).assign({}, this._defaultHeaders);
@@ -208,13 +208,13 @@ export class DefaultApi {
         }
         let localVarFormParams: any = {};
 
-        // verify required parameter 'query' is not null or undefined
-        if (query === null || query === undefined) {
-            throw new Error('Required parameter query was null or undefined when calling contactAdd.');
+        // verify required parameter 'q' is not null or undefined
+        if (q === null || q === undefined) {
+            throw new Error('Required parameter q was null or undefined when calling contactAdd.');
         }
 
-        if (query !== undefined) {
-            localVarQueryParameters['query'] = ObjectSerializer.serialize(query, "string");
+        if (q !== undefined) {
+            localVarQueryParameters['q'] = ObjectSerializer.serialize(q, "string");
         }
 
         (<any>Object).assign(localVarHeaderParams, options.headers);
@@ -268,9 +268,9 @@ export class DefaultApi {
     /**
      * List contact(s)
      * @summary List Contact(s)
-     * @param query The search query string
+     * @param q The search query string
      */
-    public async contactList (query: string, options: {headers: {[name: string]: string}} = {headers: {}}) : Promise<{ response: http.IncomingMessage; body: CommonResponse;  }> {
+    public async contactList (q: string, options: {headers: {[name: string]: string}} = {headers: {}}) : Promise<{ response: http.IncomingMessage; body: CommonResponse;  }> {
         const localVarPath = this.basePath + '/contact-list';
         let localVarQueryParameters: any = {};
         let localVarHeaderParams: any = (<any>Object).assign({}, this._defaultHeaders);
@@ -283,13 +283,13 @@ export class DefaultApi {
         }
         let localVarFormParams: any = {};
 
-        // verify required parameter 'query' is not null or undefined
-        if (query === null || query === undefined) {
-            throw new Error('Required parameter query was null or undefined when calling contactList.');
+        // verify required parameter 'q' is not null or undefined
+        if (q === null || q === undefined) {
+            throw new Error('Required parameter q was null or undefined when calling contactList.');
         }
 
-        if (query !== undefined) {
-            localVarQueryParameters['query'] = ObjectSerializer.serialize(query, "string");
+        if (q !== undefined) {
+            localVarQueryParameters['q'] = ObjectSerializer.serialize(q, "string");
         }
 
         (<any>Object).assign(localVarHeaderParams, options.headers);
@@ -343,9 +343,9 @@ export class DefaultApi {
     /**
      * List event(s)
      * @summary List Event(s)
-     * @param query The search query string
+     * @param q The search query string
      */
-    public async eventList (query: string, options: {headers: {[name: string]: string}} = {headers: {}}) : Promise<{ response: http.IncomingMessage; body: CommonResponse;  }> {
+    public async eventList (q: string, options: {headers: {[name: string]: string}} = {headers: {}}) : Promise<{ response: http.IncomingMessage; body: CommonResponse;  }> {
         const localVarPath = this.basePath + '/event-list';
         let localVarQueryParameters: any = {};
         let localVarHeaderParams: any = (<any>Object).assign({}, this._defaultHeaders);
@@ -358,13 +358,13 @@ export class DefaultApi {
         }
         let localVarFormParams: any = {};
 
-        // verify required parameter 'query' is not null or undefined
-        if (query === null || query === undefined) {
-            throw new Error('Required parameter query was null or undefined when calling eventList.');
+        // verify required parameter 'q' is not null or undefined
+        if (q === null || q === undefined) {
+            throw new Error('Required parameter q was null or undefined when calling eventList.');
         }
 
-        if (query !== undefined) {
-            localVarQueryParameters['query'] = ObjectSerializer.serialize(query, "string");
+        if (q !== undefined) {
+            localVarQueryParameters['q'] = ObjectSerializer.serialize(q, "string");
         }
 
         (<any>Object).assign(localVarHeaderParams, options.headers);
@@ -418,9 +418,9 @@ export class DefaultApi {
     /**
      * Add new type of fee
      * @summary Add Fee
-     * @param query The search query string
+     * @param q The search query string
      */
-    public async feeAdd (query: string, options: {headers: {[name: string]: string}} = {headers: {}}) : Promise<{ response: http.IncomingMessage; body: FeeAdd200Response;  }> {
+    public async feeAdd (q: string, options: {headers: {[name: string]: string}} = {headers: {}}) : Promise<{ response: http.IncomingMessage; body: FeeAdd200Response;  }> {
         const localVarPath = this.basePath + '/fee-add';
         let localVarQueryParameters: any = {};
         let localVarHeaderParams: any = (<any>Object).assign({}, this._defaultHeaders);
@@ -433,13 +433,13 @@ export class DefaultApi {
         }
         let localVarFormParams: any = {};
 
-        // verify required parameter 'query' is not null or undefined
-        if (query === null || query === undefined) {
-            throw new Error('Required parameter query was null or undefined when calling feeAdd.');
+        // verify required parameter 'q' is not null or undefined
+        if (q === null || q === undefined) {
+            throw new Error('Required parameter q was null or undefined when calling feeAdd.');
         }
 
-        if (query !== undefined) {
-            localVarQueryParameters['query'] = ObjectSerializer.serialize(query, "string");
+        if (q !== undefined) {
+            localVarQueryParameters['q'] = ObjectSerializer.serialize(q, "string");
         }
 
         (<any>Object).assign(localVarHeaderParams, options.headers);
@@ -493,9 +493,9 @@ export class DefaultApi {
     /**
      * List fee type(s)
      * @summary List Fee(s)
-     * @param query The search query string
+     * @param q The search query string
      */
-    public async feeList (query: string, options: {headers: {[name: string]: string}} = {headers: {}}) : Promise<{ response: http.IncomingMessage; body: CommonResponse;  }> {
+    public async feeList (q: string, options: {headers: {[name: string]: string}} = {headers: {}}) : Promise<{ response: http.IncomingMessage; body: CommonResponse;  }> {
         const localVarPath = this.basePath + '/fee-list';
         let localVarQueryParameters: any = {};
         let localVarHeaderParams: any = (<any>Object).assign({}, this._defaultHeaders);
@@ -508,13 +508,13 @@ export class DefaultApi {
         }
         let localVarFormParams: any = {};
 
-        // verify required parameter 'query' is not null or undefined
-        if (query === null || query === undefined) {
-            throw new Error('Required parameter query was null or undefined when calling feeList.');
+        // verify required parameter 'q' is not null or undefined
+        if (q === null || q === undefined) {
+            throw new Error('Required parameter q was null or undefined when calling feeList.');
         }
 
-        if (query !== undefined) {
-            localVarQueryParameters['query'] = ObjectSerializer.serialize(query, "string");
+        if (q !== undefined) {
+            localVarQueryParameters['q'] = ObjectSerializer.serialize(q, "string");
         }
 
         (<any>Object).assign(localVarHeaderParams, options.headers);
@@ -568,9 +568,9 @@ export class DefaultApi {
     /**
      * List invoice(s)
      * @summary List Invoice(s)
-     * @param query The search query string
+     * @param q The search query string
      */
-    public async invoiceList (query: string, options: {headers: {[name: string]: string}} = {headers: {}}) : Promise<{ response: http.IncomingMessage; body: CommonResponse;  }> {
+    public async invoiceList (q: string, options: {headers: {[name: string]: string}} = {headers: {}}) : Promise<{ response: http.IncomingMessage; body: CommonResponse;  }> {
         const localVarPath = this.basePath + '/invoice-list';
         let localVarQueryParameters: any = {};
         let localVarHeaderParams: any = (<any>Object).assign({}, this._defaultHeaders);
@@ -583,13 +583,13 @@ export class DefaultApi {
         }
         let localVarFormParams: any = {};
 
-        // verify required parameter 'query' is not null or undefined
-        if (query === null || query === undefined) {
-            throw new Error('Required parameter query was null or undefined when calling invoiceList.');
+        // verify required parameter 'q' is not null or undefined
+        if (q === null || q === undefined) {
+            throw new Error('Required parameter q was null or undefined when calling invoiceList.');
         }
 
-        if (query !== undefined) {
-            localVarQueryParameters['query'] = ObjectSerializer.serialize(query, "string");
+        if (q !== undefined) {
+            localVarQueryParameters['q'] = ObjectSerializer.serialize(q, "string");
         }
 
         (<any>Object).assign(localVarHeaderParams, options.headers);
@@ -643,9 +643,9 @@ export class DefaultApi {
     /**
      * List ledger(s)
      * @summary List Ledger(s)
-     * @param query The search query string
+     * @param q The search query string
      */
-    public async ledgerList (query: string, options: {headers: {[name: string]: string}} = {headers: {}}) : Promise<{ response: http.IncomingMessage; body: CommonResponse;  }> {
+    public async ledgerList (q: string, options: {headers: {[name: string]: string}} = {headers: {}}) : Promise<{ response: http.IncomingMessage; body: CommonResponse;  }> {
         const localVarPath = this.basePath + '/ledger-list';
         let localVarQueryParameters: any = {};
         let localVarHeaderParams: any = (<any>Object).assign({}, this._defaultHeaders);
@@ -658,13 +658,13 @@ export class DefaultApi {
         }
         let localVarFormParams: any = {};
 
-        // verify required parameter 'query' is not null or undefined
-        if (query === null || query === undefined) {
-            throw new Error('Required parameter query was null or undefined when calling ledgerList.');
+        // verify required parameter 'q' is not null or undefined
+        if (q === null || q === undefined) {
+            throw new Error('Required parameter q was null or undefined when calling ledgerList.');
         }
 
-        if (query !== undefined) {
-            localVarQueryParameters['query'] = ObjectSerializer.serialize(query, "string");
+        if (q !== undefined) {
+            localVarQueryParameters['q'] = ObjectSerializer.serialize(q, "string");
         }
 
         (<any>Object).assign(localVarHeaderParams, options.headers);
@@ -718,9 +718,9 @@ export class DefaultApi {
     /**
      * Log out of the system
      * @summary Log Out
-     * @param query The search query string
+     * @param q The search query string
      */
-    public async logOut (query: string, options: {headers: {[name: string]: string}} = {headers: {}}) : Promise<{ response: http.IncomingMessage; body: CommonResponse;  }> {
+    public async logOut (q: string, options: {headers: {[name: string]: string}} = {headers: {}}) : Promise<{ response: http.IncomingMessage; body: CommonResponse;  }> {
         const localVarPath = this.basePath + '/log-out';
         let localVarQueryParameters: any = {};
         let localVarHeaderParams: any = (<any>Object).assign({}, this._defaultHeaders);
@@ -733,13 +733,13 @@ export class DefaultApi {
         }
         let localVarFormParams: any = {};
 
-        // verify required parameter 'query' is not null or undefined
-        if (query === null || query === undefined) {
-            throw new Error('Required parameter query was null or undefined when calling logOut.');
+        // verify required parameter 'q' is not null or undefined
+        if (q === null || q === undefined) {
+            throw new Error('Required parameter q was null or undefined when calling logOut.');
         }
 
-        if (query !== undefined) {
-            localVarQueryParameters['query'] = ObjectSerializer.serialize(query, "string");
+        if (q !== undefined) {
+            localVarQueryParameters['q'] = ObjectSerializer.serialize(q, "string");
         }
 
         (<any>Object).assign(localVarHeaderParams, options.headers);
@@ -793,9 +793,9 @@ export class DefaultApi {
     /**
      * Move a customer into a unit
      * @summary Move In
-     * @param query The search query string
+     * @param q The search query string
      */
-    public async moveIn (query: string, options: {headers: {[name: string]: string}} = {headers: {}}) : Promise<{ response: http.IncomingMessage; body: MoveIn200Response;  }> {
+    public async moveIn (q: string, options: {headers: {[name: string]: string}} = {headers: {}}) : Promise<{ response: http.IncomingMessage; body: MoveIn200Response;  }> {
         const localVarPath = this.basePath + '/move-in';
         let localVarQueryParameters: any = {};
         let localVarHeaderParams: any = (<any>Object).assign({}, this._defaultHeaders);
@@ -808,13 +808,13 @@ export class DefaultApi {
         }
         let localVarFormParams: any = {};
 
-        // verify required parameter 'query' is not null or undefined
-        if (query === null || query === undefined) {
-            throw new Error('Required parameter query was null or undefined when calling moveIn.');
+        // verify required parameter 'q' is not null or undefined
+        if (q === null || q === undefined) {
+            throw new Error('Required parameter q was null or undefined when calling moveIn.');
         }
 
-        if (query !== undefined) {
-            localVarQueryParameters['query'] = ObjectSerializer.serialize(query, "string");
+        if (q !== undefined) {
+            localVarQueryParameters['q'] = ObjectSerializer.serialize(q, "string");
         }
 
         (<any>Object).assign(localVarHeaderParams, options.headers);
@@ -868,9 +868,9 @@ export class DefaultApi {
     /**
      * Move a customer out of a unit
      * @summary Move Out
-     * @param query The search query string
+     * @param q The search query string
      */
-    public async moveOut (query: string, options: {headers: {[name: string]: string}} = {headers: {}}) : Promise<{ response: http.IncomingMessage; body: MoveOut200Response;  }> {
+    public async moveOut (q: string, options: {headers: {[name: string]: string}} = {headers: {}}) : Promise<{ response: http.IncomingMessage; body: MoveOut200Response;  }> {
         const localVarPath = this.basePath + '/move-out';
         let localVarQueryParameters: any = {};
         let localVarHeaderParams: any = (<any>Object).assign({}, this._defaultHeaders);
@@ -883,13 +883,13 @@ export class DefaultApi {
         }
         let localVarFormParams: any = {};
 
-        // verify required parameter 'query' is not null or undefined
-        if (query === null || query === undefined) {
-            throw new Error('Required parameter query was null or undefined when calling moveOut.');
+        // verify required parameter 'q' is not null or undefined
+        if (q === null || q === undefined) {
+            throw new Error('Required parameter q was null or undefined when calling moveOut.');
         }
 
-        if (query !== undefined) {
-            localVarQueryParameters['query'] = ObjectSerializer.serialize(query, "string");
+        if (q !== undefined) {
+            localVarQueryParameters['q'] = ObjectSerializer.serialize(q, "string");
         }
 
         (<any>Object).assign(localVarHeaderParams, options.headers);
@@ -943,9 +943,9 @@ export class DefaultApi {
     /**
      * View the notifications screen
      * @summary Notifications
-     * @param query The search query string
+     * @param q The search query string
      */
-    public async notifications (query: string, options: {headers: {[name: string]: string}} = {headers: {}}) : Promise<{ response: http.IncomingMessage; body: CommonResponse;  }> {
+    public async notifications (q: string, options: {headers: {[name: string]: string}} = {headers: {}}) : Promise<{ response: http.IncomingMessage; body: CommonResponse;  }> {
         const localVarPath = this.basePath + '/notifications';
         let localVarQueryParameters: any = {};
         let localVarHeaderParams: any = (<any>Object).assign({}, this._defaultHeaders);
@@ -958,13 +958,13 @@ export class DefaultApi {
         }
         let localVarFormParams: any = {};
 
-        // verify required parameter 'query' is not null or undefined
-        if (query === null || query === undefined) {
-            throw new Error('Required parameter query was null or undefined when calling notifications.');
+        // verify required parameter 'q' is not null or undefined
+        if (q === null || q === undefined) {
+            throw new Error('Required parameter q was null or undefined when calling notifications.');
         }
 
-        if (query !== undefined) {
-            localVarQueryParameters['query'] = ObjectSerializer.serialize(query, "string");
+        if (q !== undefined) {
+            localVarQueryParameters['q'] = ObjectSerializer.serialize(q, "string");
         }
 
         (<any>Object).assign(localVarHeaderParams, options.headers);
@@ -1018,9 +1018,9 @@ export class DefaultApi {
     /**
      * Add new pricing group
      * @summary Add Pricing Group
-     * @param query The search query string
+     * @param q The search query string
      */
-    public async pricingGroupAdd (query: string, options: {headers: {[name: string]: string}} = {headers: {}}) : Promise<{ response: http.IncomingMessage; body: PricingGroupAdd200Response;  }> {
+    public async pricingGroupAdd (q: string, options: {headers: {[name: string]: string}} = {headers: {}}) : Promise<{ response: http.IncomingMessage; body: PricingGroupAdd200Response;  }> {
         const localVarPath = this.basePath + '/pricing-group-add';
         let localVarQueryParameters: any = {};
         let localVarHeaderParams: any = (<any>Object).assign({}, this._defaultHeaders);
@@ -1033,13 +1033,13 @@ export class DefaultApi {
         }
         let localVarFormParams: any = {};
 
-        // verify required parameter 'query' is not null or undefined
-        if (query === null || query === undefined) {
-            throw new Error('Required parameter query was null or undefined when calling pricingGroupAdd.');
+        // verify required parameter 'q' is not null or undefined
+        if (q === null || q === undefined) {
+            throw new Error('Required parameter q was null or undefined when calling pricingGroupAdd.');
         }
 
-        if (query !== undefined) {
-            localVarQueryParameters['query'] = ObjectSerializer.serialize(query, "string");
+        if (q !== undefined) {
+            localVarQueryParameters['q'] = ObjectSerializer.serialize(q, "string");
         }
 
         (<any>Object).assign(localVarHeaderParams, options.headers);
@@ -1093,9 +1093,9 @@ export class DefaultApi {
     /**
      * List pricing group(s)
      * @summary List Pricing Group(s)
-     * @param query The search query string
+     * @param q The search query string
      */
-    public async pricingGroupList (query: string, options: {headers: {[name: string]: string}} = {headers: {}}) : Promise<{ response: http.IncomingMessage; body: CommonResponse;  }> {
+    public async pricingGroupList (q: string, options: {headers: {[name: string]: string}} = {headers: {}}) : Promise<{ response: http.IncomingMessage; body: CommonResponse;  }> {
         const localVarPath = this.basePath + '/pricing-group-list';
         let localVarQueryParameters: any = {};
         let localVarHeaderParams: any = (<any>Object).assign({}, this._defaultHeaders);
@@ -1108,13 +1108,13 @@ export class DefaultApi {
         }
         let localVarFormParams: any = {};
 
-        // verify required parameter 'query' is not null or undefined
-        if (query === null || query === undefined) {
-            throw new Error('Required parameter query was null or undefined when calling pricingGroupList.');
+        // verify required parameter 'q' is not null or undefined
+        if (q === null || q === undefined) {
+            throw new Error('Required parameter q was null or undefined when calling pricingGroupList.');
         }
 
-        if (query !== undefined) {
-            localVarQueryParameters['query'] = ObjectSerializer.serialize(query, "string");
+        if (q !== undefined) {
+            localVarQueryParameters['q'] = ObjectSerializer.serialize(q, "string");
         }
 
         (<any>Object).assign(localVarHeaderParams, options.headers);
@@ -1168,9 +1168,9 @@ export class DefaultApi {
     /**
      * Add new product/merchandise item
      * @summary Add Product
-     * @param query The search query string
+     * @param q The search query string
      */
-    public async productAdd (query: string, options: {headers: {[name: string]: string}} = {headers: {}}) : Promise<{ response: http.IncomingMessage; body: ProductAdd200Response;  }> {
+    public async productAdd (q: string, options: {headers: {[name: string]: string}} = {headers: {}}) : Promise<{ response: http.IncomingMessage; body: ProductAdd200Response;  }> {
         const localVarPath = this.basePath + '/product-add';
         let localVarQueryParameters: any = {};
         let localVarHeaderParams: any = (<any>Object).assign({}, this._defaultHeaders);
@@ -1183,13 +1183,13 @@ export class DefaultApi {
         }
         let localVarFormParams: any = {};
 
-        // verify required parameter 'query' is not null or undefined
-        if (query === null || query === undefined) {
-            throw new Error('Required parameter query was null or undefined when calling productAdd.');
+        // verify required parameter 'q' is not null or undefined
+        if (q === null || q === undefined) {
+            throw new Error('Required parameter q was null or undefined when calling productAdd.');
         }
 
-        if (query !== undefined) {
-            localVarQueryParameters['query'] = ObjectSerializer.serialize(query, "string");
+        if (q !== undefined) {
+            localVarQueryParameters['q'] = ObjectSerializer.serialize(q, "string");
         }
 
         (<any>Object).assign(localVarHeaderParams, options.headers);
@@ -1243,9 +1243,9 @@ export class DefaultApi {
     /**
      * Add new product/merchandise item category
      * @summary Add Product Category
-     * @param query The search query string
+     * @param q The search query string
      */
-    public async productCategoryAdd (query: string, options: {headers: {[name: string]: string}} = {headers: {}}) : Promise<{ response: http.IncomingMessage; body: ProductCategoryAdd200Response;  }> {
+    public async productCategoryAdd (q: string, options: {headers: {[name: string]: string}} = {headers: {}}) : Promise<{ response: http.IncomingMessage; body: ProductCategoryAdd200Response;  }> {
         const localVarPath = this.basePath + '/product-category-add';
         let localVarQueryParameters: any = {};
         let localVarHeaderParams: any = (<any>Object).assign({}, this._defaultHeaders);
@@ -1258,13 +1258,13 @@ export class DefaultApi {
         }
         let localVarFormParams: any = {};
 
-        // verify required parameter 'query' is not null or undefined
-        if (query === null || query === undefined) {
-            throw new Error('Required parameter query was null or undefined when calling productCategoryAdd.');
+        // verify required parameter 'q' is not null or undefined
+        if (q === null || q === undefined) {
+            throw new Error('Required parameter q was null or undefined when calling productCategoryAdd.');
         }
 
-        if (query !== undefined) {
-            localVarQueryParameters['query'] = ObjectSerializer.serialize(query, "string");
+        if (q !== undefined) {
+            localVarQueryParameters['q'] = ObjectSerializer.serialize(q, "string");
         }
 
         (<any>Object).assign(localVarHeaderParams, options.headers);
@@ -1318,9 +1318,9 @@ export class DefaultApi {
     /**
      * List product/merchandise item category/ies
      * @summary List Product Category(s)
-     * @param query The search query string
+     * @param q The search query string
      */
-    public async productCategoryList (query: string, options: {headers: {[name: string]: string}} = {headers: {}}) : Promise<{ response: http.IncomingMessage; body: CommonResponse;  }> {
+    public async productCategoryList (q: string, options: {headers: {[name: string]: string}} = {headers: {}}) : Promise<{ response: http.IncomingMessage; body: CommonResponse;  }> {
         const localVarPath = this.basePath + '/product-category-list';
         let localVarQueryParameters: any = {};
         let localVarHeaderParams: any = (<any>Object).assign({}, this._defaultHeaders);
@@ -1333,13 +1333,13 @@ export class DefaultApi {
         }
         let localVarFormParams: any = {};
 
-        // verify required parameter 'query' is not null or undefined
-        if (query === null || query === undefined) {
-            throw new Error('Required parameter query was null or undefined when calling productCategoryList.');
+        // verify required parameter 'q' is not null or undefined
+        if (q === null || q === undefined) {
+            throw new Error('Required parameter q was null or undefined when calling productCategoryList.');
         }
 
-        if (query !== undefined) {
-            localVarQueryParameters['query'] = ObjectSerializer.serialize(query, "string");
+        if (q !== undefined) {
+            localVarQueryParameters['q'] = ObjectSerializer.serialize(q, "string");
         }
 
         (<any>Object).assign(localVarHeaderParams, options.headers);
@@ -1393,9 +1393,9 @@ export class DefaultApi {
     /**
      * List product(s)/merchandise item(s)
      * @summary List Product(s)
-     * @param query The search query string
+     * @param q The search query string
      */
-    public async productList (query: string, options: {headers: {[name: string]: string}} = {headers: {}}) : Promise<{ response: http.IncomingMessage; body: CommonResponse;  }> {
+    public async productList (q: string, options: {headers: {[name: string]: string}} = {headers: {}}) : Promise<{ response: http.IncomingMessage; body: CommonResponse;  }> {
         const localVarPath = this.basePath + '/product-list';
         let localVarQueryParameters: any = {};
         let localVarHeaderParams: any = (<any>Object).assign({}, this._defaultHeaders);
@@ -1408,13 +1408,13 @@ export class DefaultApi {
         }
         let localVarFormParams: any = {};
 
-        // verify required parameter 'query' is not null or undefined
-        if (query === null || query === undefined) {
-            throw new Error('Required parameter query was null or undefined when calling productList.');
+        // verify required parameter 'q' is not null or undefined
+        if (q === null || q === undefined) {
+            throw new Error('Required parameter q was null or undefined when calling productList.');
         }
 
-        if (query !== undefined) {
-            localVarQueryParameters['query'] = ObjectSerializer.serialize(query, "string");
+        if (q !== undefined) {
+            localVarQueryParameters['q'] = ObjectSerializer.serialize(q, "string");
         }
 
         (<any>Object).assign(localVarHeaderParams, options.headers);
@@ -1468,9 +1468,9 @@ export class DefaultApi {
     /**
      * Show platform release notes
      * @summary Release Notes
-     * @param query The search query string
+     * @param q The search query string
      */
-    public async releaseNotes (query: string, options: {headers: {[name: string]: string}} = {headers: {}}) : Promise<{ response: http.IncomingMessage; body: CommonResponse;  }> {
+    public async releaseNotes (q: string, options: {headers: {[name: string]: string}} = {headers: {}}) : Promise<{ response: http.IncomingMessage; body: CommonResponse;  }> {
         const localVarPath = this.basePath + '/release-notes';
         let localVarQueryParameters: any = {};
         let localVarHeaderParams: any = (<any>Object).assign({}, this._defaultHeaders);
@@ -1483,13 +1483,13 @@ export class DefaultApi {
         }
         let localVarFormParams: any = {};
 
-        // verify required parameter 'query' is not null or undefined
-        if (query === null || query === undefined) {
-            throw new Error('Required parameter query was null or undefined when calling releaseNotes.');
+        // verify required parameter 'q' is not null or undefined
+        if (q === null || q === undefined) {
+            throw new Error('Required parameter q was null or undefined when calling releaseNotes.');
         }
 
-        if (query !== undefined) {
-            localVarQueryParameters['query'] = ObjectSerializer.serialize(query, "string");
+        if (q !== undefined) {
+            localVarQueryParameters['q'] = ObjectSerializer.serialize(q, "string");
         }
 
         (<any>Object).assign(localVarHeaderParams, options.headers);
@@ -1543,9 +1543,9 @@ export class DefaultApi {
     /**
      * List rental(s)
      * @summary List Rental(s)
-     * @param query The search query string
+     * @param q The search query string
      */
-    public async rentalList (query: string, options: {headers: {[name: string]: string}} = {headers: {}}) : Promise<{ response: http.IncomingMessage; body: CommonResponse;  }> {
+    public async rentalList (q: string, options: {headers: {[name: string]: string}} = {headers: {}}) : Promise<{ response: http.IncomingMessage; body: CommonResponse;  }> {
         const localVarPath = this.basePath + '/rental-list';
         let localVarQueryParameters: any = {};
         let localVarHeaderParams: any = (<any>Object).assign({}, this._defaultHeaders);
@@ -1558,13 +1558,13 @@ export class DefaultApi {
         }
         let localVarFormParams: any = {};
 
-        // verify required parameter 'query' is not null or undefined
-        if (query === null || query === undefined) {
-            throw new Error('Required parameter query was null or undefined when calling rentalList.');
+        // verify required parameter 'q' is not null or undefined
+        if (q === null || q === undefined) {
+            throw new Error('Required parameter q was null or undefined when calling rentalList.');
         }
 
-        if (query !== undefined) {
-            localVarQueryParameters['query'] = ObjectSerializer.serialize(query, "string");
+        if (q !== undefined) {
+            localVarQueryParameters['q'] = ObjectSerializer.serialize(q, "string");
         }
 
         (<any>Object).assign(localVarHeaderParams, options.headers);
@@ -1618,9 +1618,9 @@ export class DefaultApi {
     /**
      * Generate/run a report, including performing any database query to calculate totals or other data
      * @summary Run a Report
-     * @param query The search query string
+     * @param q The search query string
      */
-    public async report (query: string, options: {headers: {[name: string]: string}} = {headers: {}}) : Promise<{ response: http.IncomingMessage; body: Report200Response;  }> {
+    public async report (q: string, options: {headers: {[name: string]: string}} = {headers: {}}) : Promise<{ response: http.IncomingMessage; body: Report200Response;  }> {
         const localVarPath = this.basePath + '/report';
         let localVarQueryParameters: any = {};
         let localVarHeaderParams: any = (<any>Object).assign({}, this._defaultHeaders);
@@ -1633,13 +1633,13 @@ export class DefaultApi {
         }
         let localVarFormParams: any = {};
 
-        // verify required parameter 'query' is not null or undefined
-        if (query === null || query === undefined) {
-            throw new Error('Required parameter query was null or undefined when calling report.');
+        // verify required parameter 'q' is not null or undefined
+        if (q === null || q === undefined) {
+            throw new Error('Required parameter q was null or undefined when calling report.');
         }
 
-        if (query !== undefined) {
-            localVarQueryParameters['query'] = ObjectSerializer.serialize(query, "string");
+        if (q !== undefined) {
+            localVarQueryParameters['q'] = ObjectSerializer.serialize(q, "string");
         }
 
         (<any>Object).assign(localVarHeaderParams, options.headers);
@@ -1693,9 +1693,9 @@ export class DefaultApi {
     /**
      * Make a new reservation for a unit
      * @summary Add Reservation
-     * @param query The search query string
+     * @param q The search query string
      */
-    public async reservationAdd (query: string, options: {headers: {[name: string]: string}} = {headers: {}}) : Promise<{ response: http.IncomingMessage; body: ReservationAdd200Response;  }> {
+    public async reservationAdd (q: string, options: {headers: {[name: string]: string}} = {headers: {}}) : Promise<{ response: http.IncomingMessage; body: ReservationAdd200Response;  }> {
         const localVarPath = this.basePath + '/reservation-add';
         let localVarQueryParameters: any = {};
         let localVarHeaderParams: any = (<any>Object).assign({}, this._defaultHeaders);
@@ -1708,13 +1708,13 @@ export class DefaultApi {
         }
         let localVarFormParams: any = {};
 
-        // verify required parameter 'query' is not null or undefined
-        if (query === null || query === undefined) {
-            throw new Error('Required parameter query was null or undefined when calling reservationAdd.');
+        // verify required parameter 'q' is not null or undefined
+        if (q === null || q === undefined) {
+            throw new Error('Required parameter q was null or undefined when calling reservationAdd.');
         }
 
-        if (query !== undefined) {
-            localVarQueryParameters['query'] = ObjectSerializer.serialize(query, "string");
+        if (q !== undefined) {
+            localVarQueryParameters['q'] = ObjectSerializer.serialize(q, "string");
         }
 
         (<any>Object).assign(localVarHeaderParams, options.headers);
@@ -1768,9 +1768,9 @@ export class DefaultApi {
     /**
      * List reservation(s)
      * @summary List Reservation(s)
-     * @param query The search query string
+     * @param q The search query string
      */
-    public async reservationList (query: string, options: {headers: {[name: string]: string}} = {headers: {}}) : Promise<{ response: http.IncomingMessage; body: CommonResponse;  }> {
+    public async reservationList (q: string, options: {headers: {[name: string]: string}} = {headers: {}}) : Promise<{ response: http.IncomingMessage; body: CommonResponse;  }> {
         const localVarPath = this.basePath + '/reservation-list';
         let localVarQueryParameters: any = {};
         let localVarHeaderParams: any = (<any>Object).assign({}, this._defaultHeaders);
@@ -1783,13 +1783,13 @@ export class DefaultApi {
         }
         let localVarFormParams: any = {};
 
-        // verify required parameter 'query' is not null or undefined
-        if (query === null || query === undefined) {
-            throw new Error('Required parameter query was null or undefined when calling reservationList.');
+        // verify required parameter 'q' is not null or undefined
+        if (q === null || q === undefined) {
+            throw new Error('Required parameter q was null or undefined when calling reservationList.');
         }
 
-        if (query !== undefined) {
-            localVarQueryParameters['query'] = ObjectSerializer.serialize(query, "string");
+        if (q !== undefined) {
+            localVarQueryParameters['q'] = ObjectSerializer.serialize(q, "string");
         }
 
         (<any>Object).assign(localVarHeaderParams, options.headers);
@@ -1843,9 +1843,9 @@ export class DefaultApi {
     /**
      * Reset data
      * @summary Reset Data
-     * @param query The search query string
+     * @param q The search query string
      */
-    public async resetData (query: string, options: {headers: {[name: string]: string}} = {headers: {}}) : Promise<{ response: http.IncomingMessage; body: CommonResponse;  }> {
+    public async resetData (q: string, options: {headers: {[name: string]: string}} = {headers: {}}) : Promise<{ response: http.IncomingMessage; body: CommonResponse;  }> {
         const localVarPath = this.basePath + '/reset-data';
         let localVarQueryParameters: any = {};
         let localVarHeaderParams: any = (<any>Object).assign({}, this._defaultHeaders);
@@ -1858,13 +1858,13 @@ export class DefaultApi {
         }
         let localVarFormParams: any = {};
 
-        // verify required parameter 'query' is not null or undefined
-        if (query === null || query === undefined) {
-            throw new Error('Required parameter query was null or undefined when calling resetData.');
+        // verify required parameter 'q' is not null or undefined
+        if (q === null || q === undefined) {
+            throw new Error('Required parameter q was null or undefined when calling resetData.');
         }
 
-        if (query !== undefined) {
-            localVarQueryParameters['query'] = ObjectSerializer.serialize(query, "string");
+        if (q !== undefined) {
+            localVarQueryParameters['q'] = ObjectSerializer.serialize(q, "string");
         }
 
         (<any>Object).assign(localVarHeaderParams, options.headers);
@@ -1918,9 +1918,9 @@ export class DefaultApi {
     /**
      * Update appearance settings incl. light/dark mode, unit status color, and showing grid/labels on the 3D map
      * @summary Appearance Settings
-     * @param query The search query string
+     * @param q The search query string
      */
-    public async settingsAppearance (query: string, options: {headers: {[name: string]: string}} = {headers: {}}) : Promise<{ response: http.IncomingMessage; body: SettingsAppearance200Response;  }> {
+    public async settingsAppearance (q: string, options: {headers: {[name: string]: string}} = {headers: {}}) : Promise<{ response: http.IncomingMessage; body: SettingsAppearance200Response;  }> {
         const localVarPath = this.basePath + '/settings-appearance';
         let localVarQueryParameters: any = {};
         let localVarHeaderParams: any = (<any>Object).assign({}, this._defaultHeaders);
@@ -1933,13 +1933,13 @@ export class DefaultApi {
         }
         let localVarFormParams: any = {};
 
-        // verify required parameter 'query' is not null or undefined
-        if (query === null || query === undefined) {
-            throw new Error('Required parameter query was null or undefined when calling settingsAppearance.');
+        // verify required parameter 'q' is not null or undefined
+        if (q === null || q === undefined) {
+            throw new Error('Required parameter q was null or undefined when calling settingsAppearance.');
         }
 
-        if (query !== undefined) {
-            localVarQueryParameters['query'] = ObjectSerializer.serialize(query, "string");
+        if (q !== undefined) {
+            localVarQueryParameters['q'] = ObjectSerializer.serialize(q, "string");
         }
 
         (<any>Object).assign(localVarHeaderParams, options.headers);
@@ -1993,9 +1993,9 @@ export class DefaultApi {
     /**
      * Update language settings
      * @summary Language Settings
-     * @param query The search query string
+     * @param q The search query string
      */
-    public async settingsLanguage (query: string, options: {headers: {[name: string]: string}} = {headers: {}}) : Promise<{ response: http.IncomingMessage; body: SettingsLanguage200Response;  }> {
+    public async settingsLanguage (q: string, options: {headers: {[name: string]: string}} = {headers: {}}) : Promise<{ response: http.IncomingMessage; body: SettingsLanguage200Response;  }> {
         const localVarPath = this.basePath + '/settings-language';
         let localVarQueryParameters: any = {};
         let localVarHeaderParams: any = (<any>Object).assign({}, this._defaultHeaders);
@@ -2008,13 +2008,13 @@ export class DefaultApi {
         }
         let localVarFormParams: any = {};
 
-        // verify required parameter 'query' is not null or undefined
-        if (query === null || query === undefined) {
-            throw new Error('Required parameter query was null or undefined when calling settingsLanguage.');
+        // verify required parameter 'q' is not null or undefined
+        if (q === null || q === undefined) {
+            throw new Error('Required parameter q was null or undefined when calling settingsLanguage.');
         }
 
-        if (query !== undefined) {
-            localVarQueryParameters['query'] = ObjectSerializer.serialize(query, "string");
+        if (q !== undefined) {
+            localVarQueryParameters['q'] = ObjectSerializer.serialize(q, "string");
         }
 
         (<any>Object).assign(localVarHeaderParams, options.headers);
@@ -2068,9 +2068,9 @@ export class DefaultApi {
     /**
      * Update organization settings incl. name, description, currency, days before late/lien/overlocked/move-out, prorate move-out threshold date, notification delay, max reminder attempts, billing cycle type or timezone
      * @summary Organization Settings
-     * @param query The search query string
+     * @param q The search query string
      */
-    public async settingsOrganization (query: string, options: {headers: {[name: string]: string}} = {headers: {}}) : Promise<{ response: http.IncomingMessage; body: SettingsOrganization200Response;  }> {
+    public async settingsOrganization (q: string, options: {headers: {[name: string]: string}} = {headers: {}}) : Promise<{ response: http.IncomingMessage; body: SettingsOrganization200Response;  }> {
         const localVarPath = this.basePath + '/settings-organization';
         let localVarQueryParameters: any = {};
         let localVarHeaderParams: any = (<any>Object).assign({}, this._defaultHeaders);
@@ -2083,13 +2083,13 @@ export class DefaultApi {
         }
         let localVarFormParams: any = {};
 
-        // verify required parameter 'query' is not null or undefined
-        if (query === null || query === undefined) {
-            throw new Error('Required parameter query was null or undefined when calling settingsOrganization.');
+        // verify required parameter 'q' is not null or undefined
+        if (q === null || q === undefined) {
+            throw new Error('Required parameter q was null or undefined when calling settingsOrganization.');
         }
 
-        if (query !== undefined) {
-            localVarQueryParameters['query'] = ObjectSerializer.serialize(query, "string");
+        if (q !== undefined) {
+            localVarQueryParameters['q'] = ObjectSerializer.serialize(q, "string");
         }
 
         (<any>Object).assign(localVarHeaderParams, options.headers);
@@ -2143,9 +2143,9 @@ export class DefaultApi {
     /**
      * Show specific floor on 3D map
      * @summary Show Floor
-     * @param query The search query string
+     * @param q The search query string
      */
-    public async showFloor (query: string, options: {headers: {[name: string]: string}} = {headers: {}}) : Promise<{ response: http.IncomingMessage; body: ShowFloor200Response;  }> {
+    public async showFloor (q: string, options: {headers: {[name: string]: string}} = {headers: {}}) : Promise<{ response: http.IncomingMessage; body: ShowFloor200Response;  }> {
         const localVarPath = this.basePath + '/show-floor';
         let localVarQueryParameters: any = {};
         let localVarHeaderParams: any = (<any>Object).assign({}, this._defaultHeaders);
@@ -2158,13 +2158,13 @@ export class DefaultApi {
         }
         let localVarFormParams: any = {};
 
-        // verify required parameter 'query' is not null or undefined
-        if (query === null || query === undefined) {
-            throw new Error('Required parameter query was null or undefined when calling showFloor.');
+        // verify required parameter 'q' is not null or undefined
+        if (q === null || q === undefined) {
+            throw new Error('Required parameter q was null or undefined when calling showFloor.');
         }
 
-        if (query !== undefined) {
-            localVarQueryParameters['query'] = ObjectSerializer.serialize(query, "string");
+        if (q !== undefined) {
+            localVarQueryParameters['q'] = ObjectSerializer.serialize(q, "string");
         }
 
         (<any>Object).assign(localVarHeaderParams, options.headers);
@@ -2218,9 +2218,9 @@ export class DefaultApi {
     /**
      * Performs a smart search using a query string
      * @summary Smart Search
-     * @param query The search query string
+     * @param q The search query string
      */
-    public async smartSearch (query: string, options: {headers: {[name: string]: string}} = {headers: {}}) : Promise<{ response: http.IncomingMessage; body: SmartSearch200Response;  }> {
+    public async smartSearch (q: string, options: {headers: {[name: string]: string}} = {headers: {}}) : Promise<{ response: http.IncomingMessage; body: SmartSearch200Response;  }> {
         const localVarPath = this.basePath + '/';
         let localVarQueryParameters: any = {};
         let localVarHeaderParams: any = (<any>Object).assign({}, this._defaultHeaders);
@@ -2233,13 +2233,13 @@ export class DefaultApi {
         }
         let localVarFormParams: any = {};
 
-        // verify required parameter 'query' is not null or undefined
-        if (query === null || query === undefined) {
-            throw new Error('Required parameter query was null or undefined when calling smartSearch.');
+        // verify required parameter 'q' is not null or undefined
+        if (q === null || q === undefined) {
+            throw new Error('Required parameter q was null or undefined when calling smartSearch.');
         }
 
-        if (query !== undefined) {
-            localVarQueryParameters['query'] = ObjectSerializer.serialize(query, "string");
+        if (q !== undefined) {
+            localVarQueryParameters['q'] = ObjectSerializer.serialize(q, "string");
         }
 
         (<any>Object).assign(localVarHeaderParams, options.headers);
@@ -2293,9 +2293,9 @@ export class DefaultApi {
     /**
      * Set active unit status filters
      * @summary Status Filters
-     * @param query The search query string
+     * @param q The search query string
      */
-    public async statusFilters (query: string, options: {headers: {[name: string]: string}} = {headers: {}}) : Promise<{ response: http.IncomingMessage; body: StatusFilters200Response;  }> {
+    public async statusFilters (q: string, options: {headers: {[name: string]: string}} = {headers: {}}) : Promise<{ response: http.IncomingMessage; body: StatusFilters200Response;  }> {
         const localVarPath = this.basePath + '/status-filters';
         let localVarQueryParameters: any = {};
         let localVarHeaderParams: any = (<any>Object).assign({}, this._defaultHeaders);
@@ -2308,13 +2308,13 @@ export class DefaultApi {
         }
         let localVarFormParams: any = {};
 
-        // verify required parameter 'query' is not null or undefined
-        if (query === null || query === undefined) {
-            throw new Error('Required parameter query was null or undefined when calling statusFilters.');
+        // verify required parameter 'q' is not null or undefined
+        if (q === null || q === undefined) {
+            throw new Error('Required parameter q was null or undefined when calling statusFilters.');
         }
 
-        if (query !== undefined) {
-            localVarQueryParameters['query'] = ObjectSerializer.serialize(query, "string");
+        if (q !== undefined) {
+            localVarQueryParameters['q'] = ObjectSerializer.serialize(q, "string");
         }
 
         (<any>Object).assign(localVarHeaderParams, options.headers);
@@ -2368,9 +2368,9 @@ export class DefaultApi {
     /**
      * Add new subscription product item
      * @summary Add Subscription Product
-     * @param query The search query string
+     * @param q The search query string
      */
-    public async subscriptionProductAdd (query: string, options: {headers: {[name: string]: string}} = {headers: {}}) : Promise<{ response: http.IncomingMessage; body: SubscriptionProductAdd200Response;  }> {
+    public async subscriptionProductAdd (q: string, options: {headers: {[name: string]: string}} = {headers: {}}) : Promise<{ response: http.IncomingMessage; body: SubscriptionProductAdd200Response;  }> {
         const localVarPath = this.basePath + '/subscription-product-add';
         let localVarQueryParameters: any = {};
         let localVarHeaderParams: any = (<any>Object).assign({}, this._defaultHeaders);
@@ -2383,13 +2383,13 @@ export class DefaultApi {
         }
         let localVarFormParams: any = {};
 
-        // verify required parameter 'query' is not null or undefined
-        if (query === null || query === undefined) {
-            throw new Error('Required parameter query was null or undefined when calling subscriptionProductAdd.');
+        // verify required parameter 'q' is not null or undefined
+        if (q === null || q === undefined) {
+            throw new Error('Required parameter q was null or undefined when calling subscriptionProductAdd.');
         }
 
-        if (query !== undefined) {
-            localVarQueryParameters['query'] = ObjectSerializer.serialize(query, "string");
+        if (q !== undefined) {
+            localVarQueryParameters['q'] = ObjectSerializer.serialize(q, "string");
         }
 
         (<any>Object).assign(localVarHeaderParams, options.headers);
@@ -2443,9 +2443,9 @@ export class DefaultApi {
     /**
      * Add new subscription product item category
      * @summary Add Subscription Product Category
-     * @param query The search query string
+     * @param q The search query string
      */
-    public async subscriptionProductCategoryAdd (query: string, options: {headers: {[name: string]: string}} = {headers: {}}) : Promise<{ response: http.IncomingMessage; body: SubscriptionProductCategoryAdd200Response;  }> {
+    public async subscriptionProductCategoryAdd (q: string, options: {headers: {[name: string]: string}} = {headers: {}}) : Promise<{ response: http.IncomingMessage; body: SubscriptionProductCategoryAdd200Response;  }> {
         const localVarPath = this.basePath + '/subscription-product-category-add';
         let localVarQueryParameters: any = {};
         let localVarHeaderParams: any = (<any>Object).assign({}, this._defaultHeaders);
@@ -2458,13 +2458,13 @@ export class DefaultApi {
         }
         let localVarFormParams: any = {};
 
-        // verify required parameter 'query' is not null or undefined
-        if (query === null || query === undefined) {
-            throw new Error('Required parameter query was null or undefined when calling subscriptionProductCategoryAdd.');
+        // verify required parameter 'q' is not null or undefined
+        if (q === null || q === undefined) {
+            throw new Error('Required parameter q was null or undefined when calling subscriptionProductCategoryAdd.');
         }
 
-        if (query !== undefined) {
-            localVarQueryParameters['query'] = ObjectSerializer.serialize(query, "string");
+        if (q !== undefined) {
+            localVarQueryParameters['q'] = ObjectSerializer.serialize(q, "string");
         }
 
         (<any>Object).assign(localVarHeaderParams, options.headers);
@@ -2518,9 +2518,9 @@ export class DefaultApi {
     /**
      * List subscription product item category/ies
      * @summary Subscription Product Category List
-     * @param query The search query string
+     * @param q The search query string
      */
-    public async subscriptionProductCategoryList (query: string, options: {headers: {[name: string]: string}} = {headers: {}}) : Promise<{ response: http.IncomingMessage; body: CommonResponse;  }> {
+    public async subscriptionProductCategoryList (q: string, options: {headers: {[name: string]: string}} = {headers: {}}) : Promise<{ response: http.IncomingMessage; body: CommonResponse;  }> {
         const localVarPath = this.basePath + '/subscription-product-category-list';
         let localVarQueryParameters: any = {};
         let localVarHeaderParams: any = (<any>Object).assign({}, this._defaultHeaders);
@@ -2533,13 +2533,13 @@ export class DefaultApi {
         }
         let localVarFormParams: any = {};
 
-        // verify required parameter 'query' is not null or undefined
-        if (query === null || query === undefined) {
-            throw new Error('Required parameter query was null or undefined when calling subscriptionProductCategoryList.');
+        // verify required parameter 'q' is not null or undefined
+        if (q === null || q === undefined) {
+            throw new Error('Required parameter q was null or undefined when calling subscriptionProductCategoryList.');
         }
 
-        if (query !== undefined) {
-            localVarQueryParameters['query'] = ObjectSerializer.serialize(query, "string");
+        if (q !== undefined) {
+            localVarQueryParameters['q'] = ObjectSerializer.serialize(q, "string");
         }
 
         (<any>Object).assign(localVarHeaderParams, options.headers);
@@ -2593,9 +2593,9 @@ export class DefaultApi {
     /**
      * List subscription product item(s), incl. insurance but excl. rentals
      * @summary List Subscription Product(s)
-     * @param query The search query string
+     * @param q The search query string
      */
-    public async subscriptionProductList (query: string, options: {headers: {[name: string]: string}} = {headers: {}}) : Promise<{ response: http.IncomingMessage; body: CommonResponse;  }> {
+    public async subscriptionProductList (q: string, options: {headers: {[name: string]: string}} = {headers: {}}) : Promise<{ response: http.IncomingMessage; body: CommonResponse;  }> {
         const localVarPath = this.basePath + '/subscription-product-list';
         let localVarQueryParameters: any = {};
         let localVarHeaderParams: any = (<any>Object).assign({}, this._defaultHeaders);
@@ -2608,13 +2608,13 @@ export class DefaultApi {
         }
         let localVarFormParams: any = {};
 
-        // verify required parameter 'query' is not null or undefined
-        if (query === null || query === undefined) {
-            throw new Error('Required parameter query was null or undefined when calling subscriptionProductList.');
+        // verify required parameter 'q' is not null or undefined
+        if (q === null || q === undefined) {
+            throw new Error('Required parameter q was null or undefined when calling subscriptionProductList.');
         }
 
-        if (query !== undefined) {
-            localVarQueryParameters['query'] = ObjectSerializer.serialize(query, "string");
+        if (q !== undefined) {
+            localVarQueryParameters['q'] = ObjectSerializer.serialize(q, "string");
         }
 
         (<any>Object).assign(localVarHeaderParams, options.headers);
@@ -2668,9 +2668,9 @@ export class DefaultApi {
     /**
      * Add new tax rate
      * @summary Add Tax Rate
-     * @param query The search query string
+     * @param q The search query string
      */
-    public async taxRateAdd (query: string, options: {headers: {[name: string]: string}} = {headers: {}}) : Promise<{ response: http.IncomingMessage; body: TaxRateAdd200Response;  }> {
+    public async taxRateAdd (q: string, options: {headers: {[name: string]: string}} = {headers: {}}) : Promise<{ response: http.IncomingMessage; body: TaxRateAdd200Response;  }> {
         const localVarPath = this.basePath + '/tax-rate-add';
         let localVarQueryParameters: any = {};
         let localVarHeaderParams: any = (<any>Object).assign({}, this._defaultHeaders);
@@ -2683,13 +2683,13 @@ export class DefaultApi {
         }
         let localVarFormParams: any = {};
 
-        // verify required parameter 'query' is not null or undefined
-        if (query === null || query === undefined) {
-            throw new Error('Required parameter query was null or undefined when calling taxRateAdd.');
+        // verify required parameter 'q' is not null or undefined
+        if (q === null || q === undefined) {
+            throw new Error('Required parameter q was null or undefined when calling taxRateAdd.');
         }
 
-        if (query !== undefined) {
-            localVarQueryParameters['query'] = ObjectSerializer.serialize(query, "string");
+        if (q !== undefined) {
+            localVarQueryParameters['q'] = ObjectSerializer.serialize(q, "string");
         }
 
         (<any>Object).assign(localVarHeaderParams, options.headers);
@@ -2743,9 +2743,9 @@ export class DefaultApi {
     /**
      * List tax rate(s)
      * @summary List Tax Rate(s)
-     * @param query The search query string
+     * @param q The search query string
      */
-    public async taxRateList (query: string, options: {headers: {[name: string]: string}} = {headers: {}}) : Promise<{ response: http.IncomingMessage; body: CommonResponse;  }> {
+    public async taxRateList (q: string, options: {headers: {[name: string]: string}} = {headers: {}}) : Promise<{ response: http.IncomingMessage; body: CommonResponse;  }> {
         const localVarPath = this.basePath + '/tax-rate-list';
         let localVarQueryParameters: any = {};
         let localVarHeaderParams: any = (<any>Object).assign({}, this._defaultHeaders);
@@ -2758,13 +2758,13 @@ export class DefaultApi {
         }
         let localVarFormParams: any = {};
 
-        // verify required parameter 'query' is not null or undefined
-        if (query === null || query === undefined) {
-            throw new Error('Required parameter query was null or undefined when calling taxRateList.');
+        // verify required parameter 'q' is not null or undefined
+        if (q === null || q === undefined) {
+            throw new Error('Required parameter q was null or undefined when calling taxRateList.');
         }
 
-        if (query !== undefined) {
-            localVarQueryParameters['query'] = ObjectSerializer.serialize(query, "string");
+        if (q !== undefined) {
+            localVarQueryParameters['q'] = ObjectSerializer.serialize(q, "string");
         }
 
         (<any>Object).assign(localVarHeaderParams, options.headers);
@@ -2818,9 +2818,9 @@ export class DefaultApi {
     /**
      * Move camera on 3D map to display a top-down view of the facility
      * @summary Top Down View
-     * @param query The search query string
+     * @param q The search query string
      */
-    public async topDownView (query: string, options: {headers: {[name: string]: string}} = {headers: {}}) : Promise<{ response: http.IncomingMessage; body: CommonResponse;  }> {
+    public async topDownView (q: string, options: {headers: {[name: string]: string}} = {headers: {}}) : Promise<{ response: http.IncomingMessage; body: CommonResponse;  }> {
         const localVarPath = this.basePath + '/top-down-view';
         let localVarQueryParameters: any = {};
         let localVarHeaderParams: any = (<any>Object).assign({}, this._defaultHeaders);
@@ -2833,13 +2833,13 @@ export class DefaultApi {
         }
         let localVarFormParams: any = {};
 
-        // verify required parameter 'query' is not null or undefined
-        if (query === null || query === undefined) {
-            throw new Error('Required parameter query was null or undefined when calling topDownView.');
+        // verify required parameter 'q' is not null or undefined
+        if (q === null || q === undefined) {
+            throw new Error('Required parameter q was null or undefined when calling topDownView.');
         }
 
-        if (query !== undefined) {
-            localVarQueryParameters['query'] = ObjectSerializer.serialize(query, "string");
+        if (q !== undefined) {
+            localVarQueryParameters['q'] = ObjectSerializer.serialize(q, "string");
         }
 
         (<any>Object).assign(localVarHeaderParams, options.headers);
@@ -2893,9 +2893,9 @@ export class DefaultApi {
     /**
      * List transaction(s)
      * @summary List Transaction(s)
-     * @param query The search query string
+     * @param q The search query string
      */
-    public async transactionList (query: string, options: {headers: {[name: string]: string}} = {headers: {}}) : Promise<{ response: http.IncomingMessage; body: CommonResponse;  }> {
+    public async transactionList (q: string, options: {headers: {[name: string]: string}} = {headers: {}}) : Promise<{ response: http.IncomingMessage; body: CommonResponse;  }> {
         const localVarPath = this.basePath + '/transaction-list';
         let localVarQueryParameters: any = {};
         let localVarHeaderParams: any = (<any>Object).assign({}, this._defaultHeaders);
@@ -2908,13 +2908,13 @@ export class DefaultApi {
         }
         let localVarFormParams: any = {};
 
-        // verify required parameter 'query' is not null or undefined
-        if (query === null || query === undefined) {
-            throw new Error('Required parameter query was null or undefined when calling transactionList.');
+        // verify required parameter 'q' is not null or undefined
+        if (q === null || q === undefined) {
+            throw new Error('Required parameter q was null or undefined when calling transactionList.');
         }
 
-        if (query !== undefined) {
-            localVarQueryParameters['query'] = ObjectSerializer.serialize(query, "string");
+        if (q !== undefined) {
+            localVarQueryParameters['q'] = ObjectSerializer.serialize(q, "string");
         }
 
         (<any>Object).assign(localVarHeaderParams, options.headers);
@@ -2968,9 +2968,9 @@ export class DefaultApi {
     /**
      * List unit(s)
      * @summary List Unit(s)
-     * @param query The search query string
+     * @param q The search query string
      */
-    public async unitList (query: string, options: {headers: {[name: string]: string}} = {headers: {}}) : Promise<{ response: http.IncomingMessage; body: CommonResponse;  }> {
+    public async unitList (q: string, options: {headers: {[name: string]: string}} = {headers: {}}) : Promise<{ response: http.IncomingMessage; body: CommonResponse;  }> {
         const localVarPath = this.basePath + '/unit-list';
         let localVarQueryParameters: any = {};
         let localVarHeaderParams: any = (<any>Object).assign({}, this._defaultHeaders);
@@ -2983,13 +2983,13 @@ export class DefaultApi {
         }
         let localVarFormParams: any = {};
 
-        // verify required parameter 'query' is not null or undefined
-        if (query === null || query === undefined) {
-            throw new Error('Required parameter query was null or undefined when calling unitList.');
+        // verify required parameter 'q' is not null or undefined
+        if (q === null || q === undefined) {
+            throw new Error('Required parameter q was null or undefined when calling unitList.');
         }
 
-        if (query !== undefined) {
-            localVarQueryParameters['query'] = ObjectSerializer.serialize(query, "string");
+        if (q !== undefined) {
+            localVarQueryParameters['q'] = ObjectSerializer.serialize(q, "string");
         }
 
         (<any>Object).assign(localVarHeaderParams, options.headers);
@@ -3043,9 +3043,9 @@ export class DefaultApi {
     /**
      * List user(s)
      * @summary List User(s)
-     * @param query The search query string
+     * @param q The search query string
      */
-    public async userList (query: string, options: {headers: {[name: string]: string}} = {headers: {}}) : Promise<{ response: http.IncomingMessage; body: CommonResponse;  }> {
+    public async userList (q: string, options: {headers: {[name: string]: string}} = {headers: {}}) : Promise<{ response: http.IncomingMessage; body: CommonResponse;  }> {
         const localVarPath = this.basePath + '/user-list';
         let localVarQueryParameters: any = {};
         let localVarHeaderParams: any = (<any>Object).assign({}, this._defaultHeaders);
@@ -3058,13 +3058,13 @@ export class DefaultApi {
         }
         let localVarFormParams: any = {};
 
-        // verify required parameter 'query' is not null or undefined
-        if (query === null || query === undefined) {
-            throw new Error('Required parameter query was null or undefined when calling userList.');
+        // verify required parameter 'q' is not null or undefined
+        if (q === null || q === undefined) {
+            throw new Error('Required parameter q was null or undefined when calling userList.');
         }
 
-        if (query !== undefined) {
-            localVarQueryParameters['query'] = ObjectSerializer.serialize(query, "string");
+        if (q !== undefined) {
+            localVarQueryParameters['q'] = ObjectSerializer.serialize(q, "string");
         }
 
         (<any>Object).assign(localVarHeaderParams, options.headers);
@@ -3118,9 +3118,9 @@ export class DefaultApi {
     /**
      * Edit widget(s)
      * @summary Edit Widget(s)
-     * @param query The search query string
+     * @param q The search query string
      */
-    public async widgetsEdit (query: string, options: {headers: {[name: string]: string}} = {headers: {}}) : Promise<{ response: http.IncomingMessage; body: CommonResponse;  }> {
+    public async widgetsEdit (q: string, options: {headers: {[name: string]: string}} = {headers: {}}) : Promise<{ response: http.IncomingMessage; body: CommonResponse;  }> {
         const localVarPath = this.basePath + '/widgets-edit';
         let localVarQueryParameters: any = {};
         let localVarHeaderParams: any = (<any>Object).assign({}, this._defaultHeaders);
@@ -3133,13 +3133,13 @@ export class DefaultApi {
         }
         let localVarFormParams: any = {};
 
-        // verify required parameter 'query' is not null or undefined
-        if (query === null || query === undefined) {
-            throw new Error('Required parameter query was null or undefined when calling widgetsEdit.');
+        // verify required parameter 'q' is not null or undefined
+        if (q === null || q === undefined) {
+            throw new Error('Required parameter q was null or undefined when calling widgetsEdit.');
         }
 
-        if (query !== undefined) {
-            localVarQueryParameters['query'] = ObjectSerializer.serialize(query, "string");
+        if (q !== undefined) {
+            localVarQueryParameters['q'] = ObjectSerializer.serialize(q, "string");
         }
 
         (<any>Object).assign(localVarHeaderParams, options.headers);
@@ -3193,9 +3193,9 @@ export class DefaultApi {
     /**
      * Add new workflow definition
      * @summary Add Workflow Definition
-     * @param query The search query string
+     * @param q The search query string
      */
-    public async workflowDefinitionAdd (query: string, options: {headers: {[name: string]: string}} = {headers: {}}) : Promise<{ response: http.IncomingMessage; body: WorkflowDefinitionAdd200Response;  }> {
+    public async workflowDefinitionAdd (q: string, options: {headers: {[name: string]: string}} = {headers: {}}) : Promise<{ response: http.IncomingMessage; body: WorkflowDefinitionAdd200Response;  }> {
         const localVarPath = this.basePath + '/workflow-definition-add';
         let localVarQueryParameters: any = {};
         let localVarHeaderParams: any = (<any>Object).assign({}, this._defaultHeaders);
@@ -3208,13 +3208,13 @@ export class DefaultApi {
         }
         let localVarFormParams: any = {};
 
-        // verify required parameter 'query' is not null or undefined
-        if (query === null || query === undefined) {
-            throw new Error('Required parameter query was null or undefined when calling workflowDefinitionAdd.');
+        // verify required parameter 'q' is not null or undefined
+        if (q === null || q === undefined) {
+            throw new Error('Required parameter q was null or undefined when calling workflowDefinitionAdd.');
         }
 
-        if (query !== undefined) {
-            localVarQueryParameters['query'] = ObjectSerializer.serialize(query, "string");
+        if (q !== undefined) {
+            localVarQueryParameters['q'] = ObjectSerializer.serialize(q, "string");
         }
 
         (<any>Object).assign(localVarHeaderParams, options.headers);
@@ -3268,9 +3268,9 @@ export class DefaultApi {
     /**
      * List workflow definition(s)
      * @summary List Workflow Definition(s)
-     * @param query The search query string
+     * @param q The search query string
      */
-    public async workflowDefinitionList (query: string, options: {headers: {[name: string]: string}} = {headers: {}}) : Promise<{ response: http.IncomingMessage; body: CommonResponse;  }> {
+    public async workflowDefinitionList (q: string, options: {headers: {[name: string]: string}} = {headers: {}}) : Promise<{ response: http.IncomingMessage; body: CommonResponse;  }> {
         const localVarPath = this.basePath + '/workflow-definition-list';
         let localVarQueryParameters: any = {};
         let localVarHeaderParams: any = (<any>Object).assign({}, this._defaultHeaders);
@@ -3283,13 +3283,13 @@ export class DefaultApi {
         }
         let localVarFormParams: any = {};
 
-        // verify required parameter 'query' is not null or undefined
-        if (query === null || query === undefined) {
-            throw new Error('Required parameter query was null or undefined when calling workflowDefinitionList.');
+        // verify required parameter 'q' is not null or undefined
+        if (q === null || q === undefined) {
+            throw new Error('Required parameter q was null or undefined when calling workflowDefinitionList.');
         }
 
-        if (query !== undefined) {
-            localVarQueryParameters['query'] = ObjectSerializer.serialize(query, "string");
+        if (q !== undefined) {
+            localVarQueryParameters['q'] = ObjectSerializer.serialize(q, "string");
         }
 
         (<any>Object).assign(localVarHeaderParams, options.headers);
@@ -3343,9 +3343,9 @@ export class DefaultApi {
     /**
      * Add new workflow form
      * @summary Add Workflow Form
-     * @param query The search query string
+     * @param q The search query string
      */
-    public async workflowFormAdd (query: string, options: {headers: {[name: string]: string}} = {headers: {}}) : Promise<{ response: http.IncomingMessage; body: WorkflowFormAdd200Response;  }> {
+    public async workflowFormAdd (q: string, options: {headers: {[name: string]: string}} = {headers: {}}) : Promise<{ response: http.IncomingMessage; body: WorkflowFormAdd200Response;  }> {
         const localVarPath = this.basePath + '/workflow-form-add';
         let localVarQueryParameters: any = {};
         let localVarHeaderParams: any = (<any>Object).assign({}, this._defaultHeaders);
@@ -3358,13 +3358,13 @@ export class DefaultApi {
         }
         let localVarFormParams: any = {};
 
-        // verify required parameter 'query' is not null or undefined
-        if (query === null || query === undefined) {
-            throw new Error('Required parameter query was null or undefined when calling workflowFormAdd.');
+        // verify required parameter 'q' is not null or undefined
+        if (q === null || q === undefined) {
+            throw new Error('Required parameter q was null or undefined when calling workflowFormAdd.');
         }
 
-        if (query !== undefined) {
-            localVarQueryParameters['query'] = ObjectSerializer.serialize(query, "string");
+        if (q !== undefined) {
+            localVarQueryParameters['q'] = ObjectSerializer.serialize(q, "string");
         }
 
         (<any>Object).assign(localVarHeaderParams, options.headers);
@@ -3418,9 +3418,9 @@ export class DefaultApi {
     /**
      * List workflow form(s)
      * @summary Workflow Form List
-     * @param query The search query string
+     * @param q The search query string
      */
-    public async workflowFormList (query: string, options: {headers: {[name: string]: string}} = {headers: {}}) : Promise<{ response: http.IncomingMessage; body: CommonResponse;  }> {
+    public async workflowFormList (q: string, options: {headers: {[name: string]: string}} = {headers: {}}) : Promise<{ response: http.IncomingMessage; body: CommonResponse;  }> {
         const localVarPath = this.basePath + '/workflow-form-list';
         let localVarQueryParameters: any = {};
         let localVarHeaderParams: any = (<any>Object).assign({}, this._defaultHeaders);
@@ -3433,13 +3433,13 @@ export class DefaultApi {
         }
         let localVarFormParams: any = {};
 
-        // verify required parameter 'query' is not null or undefined
-        if (query === null || query === undefined) {
-            throw new Error('Required parameter query was null or undefined when calling workflowFormList.');
+        // verify required parameter 'q' is not null or undefined
+        if (q === null || q === undefined) {
+            throw new Error('Required parameter q was null or undefined when calling workflowFormList.');
         }
 
-        if (query !== undefined) {
-            localVarQueryParameters['query'] = ObjectSerializer.serialize(query, "string");
+        if (q !== undefined) {
+            localVarQueryParameters['q'] = ObjectSerializer.serialize(q, "string");
         }
 
         (<any>Object).assign(localVarHeaderParams, options.headers);
